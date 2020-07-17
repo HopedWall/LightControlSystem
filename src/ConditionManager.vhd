@@ -7,7 +7,7 @@ entity ConditionManager is
 port(
   clk, enable: in std_logic;
   cond: in std_logic_vector(1 downto 0);
-  m,n,s : out std_logic);
+  m,n,s,e : out std_logic);
 end ConditionManager;
 
 architecture ConditionManager_behav of ConditionManager is
@@ -16,42 +16,46 @@ architecture ConditionManager_behav of ConditionManager is
 begin
 
 fsm_cond: process(cond, currentstate)
-variable mns: std_logic_vector(2 downto 0); 
+variable mnse: std_logic_vector(3 downto 0); 
 begin
+
 case currentstate is 
-	when S_MAINTENANCE => mns := "100";
+	when S_MAINTENANCE => mnse := "1000";
 		case cond is 
 			when "01" => nextstate <= S_NOMINAL; 
 			when "11" => nextstate <= S_STANDBY; 
 			when "00" => nextstate <= S_MAINTENANCE; 	
 			when others => nextstate <= S_ERROR; 
 		end case;  --- cond=00
-	
-	when S_NOMINAL => mns := "010";
+	when S_NOMINAL => mnse := "0100";
 		case cond is 
 			when "01" => nextstate <= S_NOMINAL; 
 			when "11" => nextstate <= S_STANDBY; 
 			when "00" => nextstate <= S_MAINTENANCE; 	
 			when others => nextstate <= S_ERROR; 
 		end case;  --- cond=01
-	when S_STANDBY => mns := "011";
+	when S_STANDBY => mnse := "0010";
 		case cond is 
 			when "01" => nextstate <= S_NOMINAL; 
 			when "11" => nextstate <= S_STANDBY; 
 			when "00" => nextstate <= S_MAINTENANCE; 	
 			when others => nextstate <= S_ERROR; 
 		end case;  --- cond=11
-	when S_ERROR => mns :="000"; 		
+	when S_ERROR => mnse :="0001"; 		
 		case cond is 
-			when "00" => nextstate <= S_MAINTENANCE; 
+			when "01" => nextstate <= S_NOMINAL; 
+			when "11" => nextstate <= S_STANDBY; 
+			when "00" => nextstate <= S_MAINTENANCE;
 			when others => nextstate <= S_ERROR; --TODO: review
 		end case;  --- cond=10
 end case; -- currentstate case
 
-s <= mns(0);
-n <= mns(1);
-m <= mns(2);
+e <= mnse(0);
+s <= mnse(1);
+n <= mnse(2);
+m <= mnse(3);
 
+end process;
 
 fsm_reset: process(clk) 
 begin

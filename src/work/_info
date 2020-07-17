@@ -9,91 +9,131 @@ z2
 cModel Technology
 dC:/Modeltech_pe_edu_10.4a/examples
 Econditionmanager
-w1594759985
-Z0 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z4 dC:/Users/hoped/Desktop/ProgettoInfoInd
-8C:/Users/hoped/Desktop/ProgettoInfoInd/ConditionManager.vhd
-FC:/Users/hoped/Desktop/ProgettoInfoInd/ConditionManager.vhd
+Z0 w1594994907
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dC:/Users/hoped/Desktop/ProgettoInfoInd
+Z6 8C:/Users/hoped/Desktop/ProgettoInfoInd/ConditionManager.vhd
+Z7 FC:/Users/hoped/Desktop/ProgettoInfoInd/ConditionManager.vhd
 l0
 L6
-V5]BR@3C]4gIZ3VR<>BaW@0
-!s100 ?BmjF6EY_>1I]TTO]H:lZ3
-Z5 OP;C;10.4a;61
-32
-!s110 1594759994
+VN^^SE:^fEVlR_QE]O>9m73
+!s100 mQ2Bm=4UBPH2@2Jmo]i2U2
+Z8 OP;C;10.4a;61
+33
+Z9 !s110 1594994934
 !i10b 1
-!s108 1594759994.000000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hoped/Desktop/ProgettoInfoInd/ConditionManager.vhd|
-!s107 C:/Users/hoped/Desktop/ProgettoInfoInd/ConditionManager.vhd|
+Z10 !s108 1594994934.000000
+Z11 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/hoped/Desktop/ProgettoInfoInd/ConditionManager.vhd|
+Z12 !s107 C:/Users/hoped/Desktop/ProgettoInfoInd/ConditionManager.vhd|
 !i113 1
-Z6 o-work work -2002 -explicit -O0
-Z7 tExplicit 1
-Ecounter
-Z8 w1594758747
-R0
+Z13 o-work work -2008 -explicit -O0
+Z14 tExplicit 1
+Aconditionmanager_behav
 R1
 R2
 R3
 R4
-Z9 8C:/Users/hoped/Desktop/ProgettoInfoInd/Counter.vhd
-Z10 FC:/Users/hoped/Desktop/ProgettoInfoInd/Counter.vhd
+DEx4 work 16 conditionmanager 0 22 N^^SE:^fEVlR_QE]O>9m73
+l16
+L13
+VL0TfZb8Qd[GQjV5DeG;Xg1
+!s100 YK?hLUS`fi^h3jFiKWZ6n1
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ecounter
+Z15 w1594758747
+R1
+R2
+R3
+R4
+R5
+Z16 8C:/Users/hoped/Desktop/ProgettoInfoInd/Counter.vhd
+Z17 FC:/Users/hoped/Desktop/ProgettoInfoInd/Counter.vhd
 l0
 L6
 VHJIWooDD:^`7HQ:eOfk:21
 !s100 CYaNlKzJiiT<0fRAEZIk=1
-R5
+R8
 32
-Z11 !s110 1594759811
+Z18 !s110 1594994935
 !i10b 1
-Z12 !s108 1594759811.000000
-Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hoped/Desktop/ProgettoInfoInd/Counter.vhd|
-Z14 !s107 C:/Users/hoped/Desktop/ProgettoInfoInd/Counter.vhd|
+Z19 !s108 1594994935.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hoped/Desktop/ProgettoInfoInd/Counter.vhd|
+Z21 !s107 C:/Users/hoped/Desktop/ProgettoInfoInd/Counter.vhd|
 !i113 1
-R6
-R7
-Acounter_behavior
-R0
-R1
-R2
-R3
-DEx4 work 7 counter 0 22 HJIWooDD:^`7HQ:eOfk:21
-l20
-L14
-V[]eo2PTh1YT;5YVkUJO]G2
-!s100 :I8>E2m8VIQfa<7kZ9K_^3
-R5
-32
-R11
-!i10b 1
-R12
-R13
+Z22 o-work work -2002 -explicit -O0
 R14
-!i113 1
-R6
-R7
-Etest_conditionmanager
-w1594759806
-R0
+Acounter_behavior
 R1
 R2
 R3
 R4
-8C:\Users\hoped\Desktop\ProgettoInfoInd\tb_ConditionManager.vhd
-FC:\Users\hoped\Desktop\ProgettoInfoInd\tb_ConditionManager.vhd
+Z23 DEx4 work 7 counter 0 22 HJIWooDD:^`7HQ:eOfk:21
+l20
+L14
+Z24 V[]eo2PTh1YT;5YVkUJO]G2
+Z25 !s100 :I8>E2m8VIQfa<7kZ9K_^3
+R8
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R22
+R14
+Etest_conditionmanager
+Z26 w1594994586
+R1
+R2
+R3
+R4
+R5
+Z27 8C:/Users/hoped/Desktop/ProgettoInfoInd/tb_ConditionManager.vhd
+Z28 FC:/Users/hoped/Desktop/ProgettoInfoInd/tb_ConditionManager.vhd
 l0
 L6
 VG[1FWUUOcCciEc?<aF[`?0
 !s100 =_S[M3VYHPDQU<gQRKOi>2
-R5
+R8
 32
-!s110 1594759810
+R18
 !i10b 1
-!s108 1594759810.000000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\hoped\Desktop\ProgettoInfoInd\tb_ConditionManager.vhd|
-!s107 C:\Users\hoped\Desktop\ProgettoInfoInd\tb_ConditionManager.vhd|
+R19
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hoped/Desktop/ProgettoInfoInd/tb_ConditionManager.vhd|
+Z30 !s107 C:/Users/hoped/Desktop/ProgettoInfoInd/tb_ConditionManager.vhd|
 !i113 1
-R6
-R7
+R22
+R14
+Atest_conditionmanager_behav
+R1
+R2
+R3
+R4
+DEx4 work 21 test_conditionmanager 0 22 G[1FWUUOcCciEc?<aF[`?0
+l32
+L9
+V>G;QY34a3>D6h^2FBkVl13
+!s100 f<:d^[d?c^7`I3@O1m4P<1
+R8
+32
+R18
+!i10b 1
+R19
+R29
+R30
+!i113 1
+R22
+R14
