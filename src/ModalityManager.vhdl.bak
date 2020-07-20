@@ -1,0 +1,74 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity ModalityManager is 
+port(
+  clk, enable, reset: in std_logic;
+  modality: in std_logic_vector(1 downto 0);
+  mod5, mod12, mod15, err : out std_logic); -- ouput.
+end ModalityManager;
+
+architecture ModalityManager_behav of ModalityManager is
+	TYPE statetype IS (S_MOD5, S_MOD12, S_MOD15, S_ERROR); -- States.
+	signal currentstate, nextstate: statetype;
+begin
+
+fsm_mod: process(modality, currentstate)
+variable ftfe: std_logic_vector(3 downto 0); -- variable for remember output values.
+begin
+
+case currentstate is 
+	when S_MOD5 => ftfe := "1000";
+		case modality is 
+			when "01" => nextstate <= S_MOD12; 
+			when "11" => nextstate <= S_MOD15; 
+			when "00" => nextstate <= S_MOD5; 	
+			when others => nextstate <= S_ERROR; 
+		end case;  --- cond=00
+	when S_MOD12 => ftfe := "0100";
+		case modality is 
+			when "01" => nextstate <= S_MOD12; 
+			when "11" => nextstate <= S_MOD15; 
+			when "00" => nextstate <= S_MOD5; 	
+			when others => nextstate <= S_ERROR; 
+		end case;  --- cond=01
+	when S_MOD15 => ftfe := "0010";
+		case modality is 
+			when "01" => nextstate <= S_MOD12; 
+			when "11" => nextstate <= S_MOD15; 
+			when "00" => nextstate <= S_MOD5; 	
+			when others => nextstate <= S_ERROR;  
+		end case;  --- cond=11
+	when S_ERROR => ftfe :="0001"; 		
+		case modality is 
+			when "01" => nextstate <= S_MOD12; 
+			when "11" => nextstate <= S_MOD15; 
+			when "00" => nextstate <= S_MOD5; 	
+			when others => nextstate <= S_ERROR; 
+		end case;  --- cond=10
+end case; -- currentstate case
+
+-- Assign varible BUS to single output signals.
+err 	<= ftfe(0); -- e
+mod15 	<= ftfe(1); -- f
+mod12 	<= ftfe(2); -- t
+mod5 	<= ftfe(3); -- f
+
+end process;
+
+-- Process for udate current state with next state variables on clk's rising edge.
+fsm_reset_modality: process(clk, reset) 
+begin
+if reset = '0' then -- Reset active low.
+currentstate <= S_MOD5;
+else if rising_edge(clk) then
+	if enable='1' then
+              currentstate <= nextstate;
+        end if; -- end if enable
+end if; -- end if rising edge
+end if; -- end if reset.
+end process;
+
+end ModalityManager_behav;
