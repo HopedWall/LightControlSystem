@@ -11,7 +11,7 @@ port(
 end ConditionManager;
 
 architecture ConditionManager_behav of ConditionManager is
-	TYPE statetype IS (S_MAINTENANCE, S_NOMINAL, S_STANDBY, S_ERROR); -- States.
+	TYPE statetype IS (S_OFF, S_MAINTENANCE, S_NOMINAL, S_STANDBY, S_ERROR); -- States.
 	signal currentstate, nextstate: statetype;
 begin
 
@@ -20,6 +20,11 @@ variable mnse: std_logic_vector(3 downto 0); -- variable for remember output val
 begin
 
 case currentstate is 
+	when S_OFF => mnse := "0000";
+		case cond is 
+			when "00" => nextstate <= S_MAINTENANCE; 	
+			when others => nextstate <= S_OFF; 
+		end case;  --- Enable=0
 	when S_MAINTENANCE => mnse := "1000";
 		case cond is 
 			when "01" => nextstate <= S_NOMINAL; 
@@ -64,7 +69,9 @@ fsm_reset_cond: process(clk)
 begin
 if rising_edge(clk) then
 	if enable='1' then
-              currentstate <= nextstate;
+              	currentstate <= nextstate;
+	elsif enable = '0' then
+		currentstate <= S_OFF; -- If enable = 0 --> OFF state.
         end if; -- end if enable
 end if; -- end if rising edge
 end process;

@@ -4,7 +4,7 @@ use work.all;
 
 entity FaultDetector is
 port (	enable : in std_logic; 
-	err_MM, err_CM: in std_logic;
+	err_CM, err_MM: in std_logic;
 	FAULT: out std_logic_vector(3 downto 0) 	
       );
 end FaultDetector;
