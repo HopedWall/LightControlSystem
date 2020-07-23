@@ -1,4 +1,14 @@
-C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager.vhdl
+C:/ProgettoInfoInd/LightControlSystem/src/CounterReset.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/CounterReset.vhdl
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity counter_reset
+-- Compiling architecture counter_reset_behavior of counter_reset
+
+} {} {}} C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager.vhdl
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -17,6 +27,30 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity test_ConditionManager_enable
 -- Compiling architecture test_ConditionManager_enable_behav of test_ConditionManager_enable
+
+} {} {}} C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl {0 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity LightControlSystem
+** Error: C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl(11): (vcom-1136) Unknown identifier "Nb".
+
+** Error: C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl(11): Bad expression in left bound of range expression.
+** Error: C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl(11): Type error in range expression.
+** Error: C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl(13): VHDL Compiler exiting
+
+} {9.0 10.0 11.0 14.0} {}} C:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlStstem.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlStstem.vhdl
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity test_LightControlSystem
+-- Compiling architecture test_LightControlSystem_behav of test_LightControlSystem
 
 } {} {}} C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystem.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystem.vhdl
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -44,6 +78,17 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package std_logic_1164
 -- Compiling entity Decoder2x4
 -- Compiling architecture Decoder2x4_behav of Decoder2x4
+
+} {} {}} C:/ProgettoInfoInd/LightControlSystem/src/ControlLogic.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/ControlLogic.vhdl
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity ControlLogic
+-- Compiling architecture ControlLogic_behav of ControlLogic
 
 } {} {}} C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager.vhdl
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -114,16 +159,6 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity ModalityManager
 -- Compiling architecture ModalityManager_behav of ModalityManager
-
-} {} {}} C:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlSystem.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlSystem.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity test_LightControlSystem
--- Compiling architecture test_LightControlSystem_behav of test_LightControlSystem
 
 } {} {}} C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl {0 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
