@@ -34,7 +34,7 @@ component ControlLogic is
   red, yellow, green : out std_logic); -- ouput, each represents 1 color
 end component;
 
-constant numb : integer := 3;
+constant numb : integer := 5;
 
 -- Internal signals declaration.
 signal data_out_counter_int: std_logic_vector(numb-1 downto 0);
@@ -47,6 +47,6 @@ begin
        port map(clk, enable, mod5, mod12, mod15, m, n, s, data_out_counter_int, red, yellow, green);
    
    counter_reset_instance : counter_reset generic map(Nb => numb)
-       port map(enable_logic_to_count, clk, reset_logic_to_count, data_out_counter_int);
+       port map(enable, clk, reset_logic_to_count, data_out_counter_int);
 
 end LightControlSystem_behav;

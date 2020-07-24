@@ -37,6 +37,7 @@ if rising_edge(clk) then
    -- should we keep enable?
    if enable = '1' then
 
+    --report "Curr time" & std_logic'image(data_out_counter(0));
     curr_time := to_integer(UNSIGNED(data_out_counter));
 
     -- reset counter
@@ -77,7 +78,9 @@ if rising_edge(clk) then
        elsif curr_time >= (2*mod_time-2) and curr_time < 2*mod_time then --green and yellow for 2 secs
           green_var := '1';
           yellow_var := '1';
-       elsif curr_time = 2*mod_time then
+       end if;
+       
+       if curr_time = 2*mod_time-1 then
           reset_variable := '1';
        end if;
     end if;
@@ -85,7 +88,8 @@ if rising_edge(clk) then
     -- standby
     if s = '1' and n='0' and m='0' then
       previous_state := 's';
-      if curr_time mod 3 = 0 then
+      report "Curr time" & integer'image(curr_time);
+      if (curr_time mod 3) = 0 then
          yellow_var := '1';        --1 sec yellow is on
       else
          yellow_var := '0';        --2 secs yellow is off
@@ -102,6 +106,7 @@ if rising_edge(clk) then
 end if;
 
 -- update signals from variables before process ends
+report "Yellow" & std_logic'image(yellow_var);
 red <= red_var;
 yellow <= yellow_var;
 green <= green_var;

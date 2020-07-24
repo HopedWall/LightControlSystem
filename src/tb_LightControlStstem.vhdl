@@ -51,13 +51,13 @@ end process;
 input_gen: process
 begin
 -- maintenance
-data_out_counter <= "000100"; wait for 100 ns;
+--data_out_counter <= "000100"; wait for 100 ns;
 -- standby
-data_out_counter <= "000001"; wait for 100 ns;
+--data_out_counter <= "000001"; wait for 100 ns;
 -- nominal
 data_out_counter <= "100010"; wait for 200 ns;
-data_out_counter <= "010010"; wait for 2000 ns;
-data_out_counter <= "001010"; wait for 2500 ns;
+--data_out_counter <= "010010"; wait for 2000 ns;
+--data_out_counter <= "001010"; wait for 2500 ns;
 end process;
 
 -- Instancing components with map of corresponding signals.

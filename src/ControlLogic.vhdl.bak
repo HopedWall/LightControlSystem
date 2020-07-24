@@ -27,15 +27,17 @@ variable mod_time : integer := 5; -- variable for storing modality time
 variable curr_time : integer := 0; -- variable for storing current time from counter
 variable red_var, yellow_var, green_var : std_logic := '0'; -- variables for output
 begin
-
-red_var := '0';
-yellow_var := '0';
-green_var := '0';
   
 if rising_edge(clk) then
+
+   red_var := '0';
+   yellow_var := '0';
+   green_var := '0';
+
    -- should we keep enable?
    if enable = '1' then
 
+    --report "Curr time" & std_logic'image(data_out_counter(0));
     curr_time := to_integer(UNSIGNED(data_out_counter));
 
     -- reset counter
@@ -84,7 +86,8 @@ if rising_edge(clk) then
     -- standby
     if s = '1' and n='0' and m='0' then
       previous_state := 's';
-      if curr_time mod 3 = 0 then
+      report "Curr time" & integer'image(curr_time);
+      if (curr_time mod 3) = 0 then
          yellow_var := '1';        --1 sec yellow is on
       else
          yellow_var := '0';        --2 secs yellow is off
@@ -101,6 +104,7 @@ if rising_edge(clk) then
 end if;
 
 -- update signals from variables before process ends
+report "Yellow" & std_logic'image(yellow_var);
 red <= red_var;
 yellow <= yellow_var;
 green <= green_var;
