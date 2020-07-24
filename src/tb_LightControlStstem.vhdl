@@ -8,74 +8,61 @@ entity test_LightControlSystem is
     
 architecture test_LightControlSystem_behav of test_LightControlSystem is
 
--- Declaration of components needed for TB. 
-component LightControlSystem is 
+-- Counter for testing purposes
+component counter is
+    generic ( Nb : integer) ;
+    port( T           :in std_logic;
+          clk         :in std_logic; 
+          OUT_COUNT   :out std_logic_vector(Nb-1 downto 0)
+    );
+end component; 
+
+-- LightControlSystem that must be tested
+component LightControlSystemCounter is 
 port(
-  clk, enable: in std_logic;
-  mod5, mod12, mod15: in std_logic;
-  m, n, s: in std_logic;
-  red, yellow, green : out std_logic);
+  clk, enable : in std_logic;	-- CLK is 1 hz/period is 1 sec
+  mod5, mod12, mod15 : in std_logic; -- modalities from ModManager
+  m,n,s : in std_logic; -- conditions from CondManager
+  red, yellow, green : out std_logic); -- ouput, each represents 1 color
 end component;
 
--- Internal signals declaration.
-signal red_int, yellow_int, green_int: std_logic;
+constant numb : integer := 6;
 
-signal clk_int, enable_int: std_logic;
-signal mod5_int, mod12_int, mod15_int : std_logic;
-signal m_int, n_int, s_int : std_logic;
+-- Internal signals declaration.
+signal green_int, yellow_int, red_int : std_logic;
+signal clk_int, enable_counter_int : std_logic;
+signal data_out_counter: std_logic_vector(numb-1 downto 0);
 
 begin
 
 -- Process used for test.    
 clk_gen: process
 begin
-clk_int <= '1'; wait for 5 ns;
-clk_int <= '0'; wait for 5 ns;
+clk_int <= '1'; wait for 10 ns;
+clk_int <= '0'; wait for 10 ns;
 end process;
 
 enable_gen: process
 begin
-enable_int <= '0'; wait for 10 ns;
-enable_int <= '1'; wait for 10 ns;
+enable_counter_int <= '0'; wait for 20 ns;
+enable_counter_int <= '1'; wait for 20 ns;
 end process;
 
-mod5_gen: process
+input_gen: process
 begin
-mod5_int <= '0'; wait for 20 ns;
-mod5_int <= '1'; wait for 20 ns;
-end process;
-
-mod12_gen: process
-begin
-mod12_int <= '0'; wait for 40 ns;
-mod12_int <= '1'; wait for 40 ns;
-end process;
-
-mod15_gen: process
-begin
-mod15_int <= '0'; wait for 80 ns;
-mod15_int <= '1'; wait for 80 ns;
-end process;
-
-m_int_gen: process
-begin
-m_int <= '0'; wait for 160 ns;
-m_int <= '1'; wait for 160 ns;
-end process;
-
-n_int_gen: process
-begin
-n_int <= '0'; wait for 320 ns;
-n_int <= '1'; wait for 320 ns;
-end process;
-
-s_int_gen: process
-begin
-s_int <= '0'; wait for 640 ns;
-s_int <= '1'; wait for 640 ns;
+-- maintenance
+data_out_counter <= "000100"; wait for 100 ns;
+-- standby
+data_out_counter <= "000001"; wait for 100 ns;
+-- nominal
+data_out_counter <= "100010"; wait for 200 ns;
+data_out_counter <= "010010"; wait for 2000 ns;
+data_out_counter <= "001010"; wait for 2500 ns;
 end process;
 
 -- Instancing components with map of corresponding signals.
---LCS: LightControlSystem port map(clk_int, '1', mod5_int, mod12_int, mod15_int, m_int, n_int, s_int, red_int, yellow_int, green_int);
-   
+LCS: LightControlSystemCounter port map(clk_int, '1',data_out_counter(5), data_out_counter(4), data_out_counter(3), data_out_counter(2), data_out_counter(1), data_out_counter(0), red_int, yellow_int, green_int);
+
+--counter_tb : counter generic map (Nb => numb)
+--	  port map('1', clk_int, data_out_counter);
 end test_LightControlSystem_behav;
