@@ -23,9 +23,9 @@ VVYn?XHkXAZWPYK^8A`UcC0
 !s100 h6SX<SW_m3nhQk^jemUL71
 Z8 OP;C;10.4a;61
 32
-Z9 !s110 1595508656
+Z9 !s110 1595539651
 !i10b 1
-Z10 !s108 1595508656.000000
+Z10 !s108 1595539650.000000
 Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/ConditionManager.vhdl|
 Z12 !s107 C:/ProgettoInfoInd/LightControlSystem/src/ConditionManager.vhdl|
 !i113 1
@@ -52,7 +52,7 @@ R12
 R13
 R14
 Econtrollogic
-Z15 w1595514610
+Z15 w1595539465
 Z16 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R2
 R1
@@ -63,13 +63,13 @@ Z17 8C:/ProgettoInfoInd/LightControlSystem/src/ControlLogic.vhdl
 Z18 FC:/ProgettoInfoInd/LightControlSystem/src/ControlLogic.vhdl
 l0
 L10
-VWdK673jKEJ^GMaWD[B_SX3
-!s100 WLWZdh`5Sa;WfG:D?JlQK3
+VW2X4bBYlahhNE8cCV?EZo2
+!s100 8A3[B=n?o2R@:gg9J;e2j0
 R8
 32
-Z19 !s110 1595514616
+Z19 !s110 1595539654
 !i10b 1
-Z20 !s108 1595514615.000000
+Z20 !s108 1595539654.000000
 Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/ControlLogic.vhdl|
 Z22 !s107 C:/ProgettoInfoInd/LightControlSystem/src/ControlLogic.vhdl|
 !i113 1
@@ -81,11 +81,11 @@ R2
 R1
 R3
 R4
-DEx4 work 12 controllogic 0 22 WdK673jKEJ^GMaWD[B_SX3
+Z23 DEx4 work 12 controllogic 0 22 W2X4bBYlahhNE8cCV?EZo2
 l22
 L21
-Vo9oalNdDYhKmf`cFcTGfb1
-!s100 I6iYQ;mWFh11oL:?LPI@>2
+Z24 Vd@3]KFgKlfYccgzhAB3L50
+Z25 !s100 ]2g?adZfRRTli2<<Om62P2
 R8
 32
 R19
@@ -103,8 +103,8 @@ R2
 R3
 R4
 R5
-Z23 8C:/ProgettoInfoInd/LightControlSystem/src/Counter.vhdl
-Z24 FC:/ProgettoInfoInd/LightControlSystem/src/Counter.vhdl
+Z26 8C:/ProgettoInfoInd/LightControlSystem/src/Counter.vhdl
+Z27 FC:/ProgettoInfoInd/LightControlSystem/src/Counter.vhdl
 l0
 L6
 VHJIWooDD:^`7HQ:eOfk:21
@@ -113,9 +113,9 @@ R8
 32
 R9
 !i10b 1
-R10
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/Counter.vhdl|
-Z26 !s107 C:/ProgettoInfoInd/LightControlSystem/src/Counter.vhdl|
+Z28 !s108 1595539651.000000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/Counter.vhdl|
+Z30 !s107 C:/ProgettoInfoInd/LightControlSystem/src/Counter.vhdl|
 !i113 1
 R13
 R14
@@ -133,32 +133,32 @@ R8
 32
 R9
 !i10b 1
-R10
-R25
-R26
+R28
+R29
+R30
 !i113 1
 R13
 R14
 Ecounter_reset
-Z27 w1595508302
+Z31 w1595508302
 R1
 R2
 R3
 R4
 R5
-Z28 8C:/ProgettoInfoInd/LightControlSystem/src/CounterReset.vhdl
-Z29 FC:/ProgettoInfoInd/LightControlSystem/src/CounterReset.vhdl
+Z32 8C:/ProgettoInfoInd/LightControlSystem/src/CounterReset.vhdl
+Z33 FC:/ProgettoInfoInd/LightControlSystem/src/CounterReset.vhdl
 l0
 L6
 VV6@?zkoK1k<]1gO:>h7FO1
 !s100 OUDR?>:ZhcJecLELg`D923
 R8
 32
-Z30 !s110 1595508658
+R19
 !i10b 1
-Z31 !s108 1595508658.000000
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/CounterReset.vhdl|
-Z33 !s107 C:/ProgettoInfoInd/LightControlSystem/src/CounterReset.vhdl|
+R20
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/CounterReset.vhdl|
+Z35 !s107 C:/ProgettoInfoInd/LightControlSystem/src/CounterReset.vhdl|
 !i113 1
 R13
 R14
@@ -174,11 +174,11 @@ VPV1C7aeP`OnHOH_S9bL<A3
 !s100 Ob[IR[KTZeOXT>[fGYkAL2
 R8
 32
-R30
+R19
 !i10b 1
-R31
-R32
-R33
+R20
+R34
+R35
 !i113 1
 R13
 R14
@@ -187,37 +187,37 @@ R0
 R3
 R4
 R5
-Z34 8C:/ProgettoInfoInd/LightControlSystem/src/Decoder.vhdl
-Z35 FC:/ProgettoInfoInd/LightControlSystem/src/Decoder.vhdl
+Z36 8C:/ProgettoInfoInd/LightControlSystem/src/Decoder.vhdl
+Z37 FC:/ProgettoInfoInd/LightControlSystem/src/Decoder.vhdl
 l0
 L5
 Vd?fY_[QJYVfkR8Jm6g4]Q3
 !s100 1]`@HKFi:0`^nI>=>L6HW3
 R8
 32
-Z36 !s110 1595508657
+Z38 !s110 1595539652
 !i10b 1
-Z37 !s108 1595508657.000000
-Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/Decoder.vhdl|
-Z39 !s107 C:/ProgettoInfoInd/LightControlSystem/src/Decoder.vhdl|
+Z39 !s108 1595539652.000000
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/Decoder.vhdl|
+Z41 !s107 C:/ProgettoInfoInd/LightControlSystem/src/Decoder.vhdl|
 !i113 1
 R13
 R14
 Adecoder2x4_behav
 R3
 R4
-Z40 DEx4 work 10 decoder2x4 0 22 d?fY_[QJYVfkR8Jm6g4]Q3
+Z42 DEx4 work 10 decoder2x4 0 22 d?fY_[QJYVfkR8Jm6g4]Q3
 l14
 L12
 VLbC?G[nS4:VCV1m5XIeIP2
 !s100 bkDmcE=bc8M?J4CZn;^MB1
 R8
 32
-R36
+Z43 !s110 1595539653
 !i10b 1
-R37
-R38
 R39
+R40
+R41
 !i113 1
 R13
 R14
@@ -226,8 +226,8 @@ R0
 R3
 R4
 R5
-Z41 8C:/ProgettoInfoInd/LightControlSystem/src/FaultDetector.vhdl
-Z42 FC:/ProgettoInfoInd/LightControlSystem/src/FaultDetector.vhdl
+Z44 8C:/ProgettoInfoInd/LightControlSystem/src/FaultDetector.vhdl
+Z45 FC:/ProgettoInfoInd/LightControlSystem/src/FaultDetector.vhdl
 l0
 L5
 V]lYJLgX2^KMfz@DFE<8Jh0
@@ -236,14 +236,14 @@ R8
 32
 R9
 !i10b 1
-R10
-Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/FaultDetector.vhdl|
-Z44 !s107 C:/ProgettoInfoInd/LightControlSystem/src/FaultDetector.vhdl|
+R28
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/FaultDetector.vhdl|
+Z47 !s107 C:/ProgettoInfoInd/LightControlSystem/src/FaultDetector.vhdl|
 !i113 1
 R13
 R14
 Afaultdetector_behav
-R40
+R42
 R3
 R4
 DEx4 work 13 faultdetector 0 22 ]lYJLgX2^KMfz@DFE<8Jh0
@@ -255,32 +255,32 @@ R8
 32
 R9
 !i10b 1
-R10
-R43
-R44
+R28
+R46
+R47
 !i113 1
 R13
 R14
 Elightcontrolsystem
-Z45 w1595508809
+Z48 w1595538857
 R1
 R2
 R3
 R4
 R5
-Z46 8C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl
-Z47 FC:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl
+Z49 8C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl
+Z50 FC:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl
 l0
 L6
-V5FM25P;D<`aOGE4I48NQR3
-!s100 FKOD<zz4m5=R3dmA6EBa@1
+V0HZ4aJKT0D517ocEWSnPR1
+!s100 Pe04L5olQin<;YY>dilkH0
 R8
 32
-Z48 !s110 1595508813
+Z51 !s110 1595538938
 !i10b 1
-Z49 !s108 1595508813.000000
-Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl|
-Z51 !s107 C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl|
+Z52 !s108 1595538938.000000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl|
+Z54 !s107 C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl|
 !i113 1
 R13
 R14
@@ -289,18 +289,61 @@ R1
 R2
 R3
 R4
-DEx4 work 18 lightcontrolsystem 0 22 5FM25P;D<`aOGE4I48NQR3
-l28
-L14
-VKZ:lPn9f4Wn^DY:CB=hlY3
-!s100 IY;Lz12MkIShV3J`5M^K?1
+DEx4 work 18 lightcontrolsystem 0 22 0HZ4aJKT0D517ocEWSnPR1
+l45
+L15
+V8bkb0Y;F<_1JkKcRHbT]H2
+!s100 GN]XoY144N9KIUW80QR420
 R8
 32
-R48
+R51
 !i10b 1
+R52
+R53
+R54
+!i113 1
+R13
+R14
+Elightcontrolsystemcounter
+Z55 w1595539639
+R1
+R2
+R3
+R4
+R5
 R49
 R50
-R51
+l0
+L6
+V^8F5;GeQL]ad923Vf6mC72
+!s100 8`SXl6[B`IfQz?V3bWV:A0
+R8
+32
+R19
+!i10b 1
+Z56 !s108 1595539653.000000
+R53
+R54
+!i113 1
+R13
+R14
+Alightcontrolsystem_behav
+R1
+R2
+R3
+R4
+DEx4 work 25 lightcontrolsystemcounter 0 22 ^8F5;GeQL]ad923Vf6mC72
+l44
+L14
+VjHXla=AG>bE3Yc?ID]K1W0
+!s100 Z?`?e8FF=9VTfQfT9VTV62
+R8
+32
+R19
+!i10b 1
+R56
+R53
+R54
 !i113 1
 R13
 R14
@@ -311,8 +354,8 @@ R2
 R3
 R4
 R5
-Z52 8C:/ProgettoInfoInd/LightControlSystem/src/ModalityManager.vhdl
-Z53 FC:/ProgettoInfoInd/LightControlSystem/src/ModalityManager.vhdl
+Z57 8C:/ProgettoInfoInd/LightControlSystem/src/ModalityManager.vhdl
+Z58 FC:/ProgettoInfoInd/LightControlSystem/src/ModalityManager.vhdl
 l0
 L6
 V:3k9a6VSXKMEYOiX^_lG33
@@ -321,9 +364,9 @@ R8
 32
 R9
 !i10b 1
-R10
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/ModalityManager.vhdl|
-Z55 !s107 C:/ProgettoInfoInd/LightControlSystem/src/ModalityManager.vhdl|
+R28
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/ModalityManager.vhdl|
+Z60 !s107 C:/ProgettoInfoInd/LightControlSystem/src/ModalityManager.vhdl|
 !i113 1
 R13
 R14
@@ -341,9 +384,9 @@ R8
 32
 R9
 !i10b 1
-R10
-R54
-R55
+R28
+R59
+R60
 !i113 1
 R13
 R14
@@ -354,19 +397,19 @@ R2
 R3
 R4
 R5
-Z56 8C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager.vhdl
-Z57 FC:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager.vhdl
+Z61 8C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager.vhdl
+Z62 FC:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager.vhdl
 l0
 L6
 VG[1FWUUOcCciEc?<aF[`?0
 !s100 =_S[M3VYHPDQU<gQRKOi>2
 R8
 32
-R36
+R38
 !i10b 1
-R37
-Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager.vhdl|
-Z59 !s107 C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager.vhdl|
+R39
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager.vhdl|
+Z64 !s107 C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager.vhdl|
 !i113 1
 R13
 R14
@@ -382,11 +425,11 @@ V7i3NU[HNUVc8JNBgIHDi:0
 !s100 ;T;BbUFO>C<h:eLDEiRSD1
 R8
 32
-R36
+R38
 !i10b 1
-R37
-R58
-R59
+R39
+R63
+R64
 !i113 1
 R13
 R14
@@ -397,19 +440,19 @@ R2
 R3
 R4
 R5
-Z60 8C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager_enable.vhdl
-Z61 FC:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager_enable.vhdl
+Z65 8C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager_enable.vhdl
+Z66 FC:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager_enable.vhdl
 l0
 L6
 VT2Il0U_zQJo<NEIH5V_321
 !s100 iMNPK@El4TC111l_DZ1aQ0
 R8
 32
-R36
+R38
 !i10b 1
-R37
-Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager_enable.vhdl|
-Z63 !s107 C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager_enable.vhdl|
+R39
+Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager_enable.vhdl|
+Z68 !s107 C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager_enable.vhdl|
 !i113 1
 R13
 R14
@@ -425,34 +468,34 @@ Vl<I7]d_>Jekd0I;jPSai91
 !s100 B^N`ED6O^7ahc_e52`lch1
 R8
 32
-R36
+R38
 !i10b 1
-R37
-R62
-R63
+R39
+R67
+R68
 !i113 1
 R13
 R14
 Etest_conditionmanager_enable_reset
-Z64 w1595271372
+Z69 w1595271372
 R1
 R2
 R3
 R4
-Z65 dC:/Users/vince/Desktop/LightControlSystem/src
-Z66 8C:/Users/vince/Desktop/LightControlSystem/src/tb_ConditionManaer_enable.vhdl
-Z67 FC:/Users/vince/Desktop/LightControlSystem/src/tb_ConditionManaer_enable.vhdl
+Z70 dC:/Users/vince/Desktop/LightControlSystem/src
+Z71 8C:/Users/vince/Desktop/LightControlSystem/src/tb_ConditionManaer_enable.vhdl
+Z72 FC:/Users/vince/Desktop/LightControlSystem/src/tb_ConditionManaer_enable.vhdl
 l0
 L6
 VhdH]<Y1M3Obd4LF`BAU5?0
 !s100 0J=li<mXflRPaRAIjB`z01
 R8
 32
-Z68 !s110 1595271579
+Z73 !s110 1595271579
 !i10b 1
-Z69 !s108 1595271578.000000
-Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vince/Desktop/LightControlSystem/src/tb_ConditionManaer_enable.vhdl|
-Z71 !s107 C:/Users/vince/Desktop/LightControlSystem/src/tb_ConditionManaer_enable.vhdl|
+Z74 !s108 1595271578.000000
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vince/Desktop/LightControlSystem/src/tb_ConditionManaer_enable.vhdl|
+Z76 !s107 C:/Users/vince/Desktop/LightControlSystem/src/tb_ConditionManaer_enable.vhdl|
 !i113 1
 R13
 R14
@@ -468,11 +511,11 @@ VL@JVGlSBC_M2BI5fTHbI=2
 !s100 kE;8EOae@IAk`a15?BA983
 R8
 32
-R68
+R73
 !i10b 1
-R69
-R70
-R71
+R74
+R75
+R76
 !i113 1
 R13
 R14
@@ -483,19 +526,19 @@ R2
 R3
 R4
 R5
-Z72 8C:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector.vhdl
-Z73 FC:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector.vhdl
+Z77 8C:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector.vhdl
+Z78 FC:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector.vhdl
 l0
 L6
 VE_7_AikOaS8Pl79LI;;aM2
 !s100 EU[GOHmDQ_KJSS5EWE_mR2
 R8
 32
-R36
+R43
 !i10b 1
-R37
-Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector.vhdl|
-Z75 !s107 C:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector.vhdl|
+R56
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector.vhdl|
+Z80 !s107 C:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector.vhdl|
 !i113 1
 R13
 R14
@@ -511,11 +554,11 @@ VXIRhRC>o`N=enoQf6ImT72
 !s100 cOOKP27A5Qng:8_?oKnTZ1
 R8
 32
-R36
+R43
 !i10b 1
-R37
-R74
-R75
+R56
+R79
+R80
 !i113 1
 R13
 R14
@@ -526,19 +569,19 @@ R2
 R3
 R4
 R5
-Z76 8C:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector_enable.vhdl
-Z77 FC:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector_enable.vhdl
+Z81 8C:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector_enable.vhdl
+Z82 FC:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector_enable.vhdl
 l0
 L6
 VZV_nWWLbeY2hZN=R:39dB0
 !s100 JzDU43nk;0Uf>[Y`6Dhn;3
 R8
 32
-R36
+R43
 !i10b 1
-R37
-Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector_enable.vhdl|
-Z79 !s107 C:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector_enable.vhdl|
+R56
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector_enable.vhdl|
+Z84 !s107 C:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector_enable.vhdl|
 !i113 1
 R13
 R14
@@ -554,34 +597,34 @@ VBXSc142@m20aiKe_EL:bn3
 !s100 iaF<dMiP72Ohef1EYP:TE2
 R8
 32
-R36
+R43
 !i10b 1
-R37
-R78
-R79
+R56
+R83
+R84
 !i113 1
 R13
 R14
 Etest_lightcontrolsystem
-Z80 w1595423910
+Z85 w1595423910
 R1
 R2
 R3
 R4
 R5
-Z81 8C:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlStstem.vhdl
-Z82 FC:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlStstem.vhdl
+Z86 8C:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlStstem.vhdl
+Z87 FC:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlStstem.vhdl
 l0
 L6
 VkKc`l51oe4J=9M`;T0<gL3
 !s100 0fleLR7h3jkAQ0VYj5g6;2
 R8
 32
-R30
+R43
 !i10b 1
-R31
-Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlStstem.vhdl|
-Z84 !s107 C:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlStstem.vhdl|
+R56
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlStstem.vhdl|
+Z89 !s107 C:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlStstem.vhdl|
 !i113 1
 R13
 R14
@@ -597,11 +640,11 @@ VGHeWn6NeP5@[h[0W5DbF`3
 !s100 C<K[`OA_mPkGajiP5A@la1
 R8
 32
-R30
+R43
 !i10b 1
-R31
-R83
-R84
+R56
+R88
+R89
 !i113 1
 R13
 R14
@@ -612,19 +655,19 @@ R2
 R3
 R4
 R5
-Z85 8C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager.vhdl
-Z86 FC:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager.vhdl
+Z90 8C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager.vhdl
+Z91 FC:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager.vhdl
 l0
 L6
 V>9Cin>[00CB7Uzj5KHCB[3
 !s100 Ro;Q35Q0HjVU4180haHK^3
 R8
 32
-R36
+R38
 !i10b 1
-R37
-Z87 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager.vhdl|
-Z88 !s107 C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager.vhdl|
+R39
+Z92 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager.vhdl|
+Z93 !s107 C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager.vhdl|
 !i113 1
 R13
 R14
@@ -640,11 +683,11 @@ VSbV9:n<7b82BaElhdjnDH0
 !s100 ifE;bboLcCig3Gb]L0<HJ2
 R8
 32
-R36
+R38
 !i10b 1
-R37
-R87
-R88
+R39
+R92
+R93
 !i113 1
 R13
 R14
@@ -655,19 +698,19 @@ R2
 R3
 R4
 R5
-Z89 8C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager_enable_reset.vhdl
-Z90 FC:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager_enable_reset.vhdl
+Z94 8C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager_enable_reset.vhdl
+Z95 FC:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager_enable_reset.vhdl
 l0
 L6
 VaSfX4EYXfGzhISI0RBVSY3
 !s100 ESU5XUS>fBF>Di]Jizfn11
 R8
 32
-R9
+Z96 !s110 1595539650
 !i10b 1
 R10
-Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager_enable_reset.vhdl|
-Z92 !s107 C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager_enable_reset.vhdl|
+Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager_enable_reset.vhdl|
+Z98 !s107 C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager_enable_reset.vhdl|
 !i113 1
 R13
 R14
@@ -683,11 +726,11 @@ VN09@?hHzECDN;^DLIz_0X0
 !s100 e202O=ABlE4SZGdXoLA`W0
 R8
 32
-R9
+R96
 !i10b 1
 R10
-R91
-R92
+R97
+R98
 !i113 1
 R13
 R14
