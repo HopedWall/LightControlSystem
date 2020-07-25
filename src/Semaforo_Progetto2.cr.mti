@@ -38,16 +38,6 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity test_ConditionManager_enable
 -- Compiling architecture test_ConditionManager_enable_behav of test_ConditionManager_enable
 
-} {} {}} C:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlStstem.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlStstem.vhdl
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity test_LightControlSystem
--- Compiling architecture test_LightControlSystem_behav of test_LightControlSystem
-
 } {} {}} C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -57,6 +47,16 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity LightControlSystemCounter
 -- Compiling architecture LightControlSystem_behav of LightControlSystemCounter
+
+} {} {}} C:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlStstem.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlStstem.vhdl
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity test_LightControlSystem
+-- Compiling architecture test_LightControlSystem_behav of test_LightControlSystem
 
 } {} {}} C:/ProgettoInfoInd/LightControlSystem/src/FaultDetector.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/FaultDetector.vhdl
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -74,17 +74,6 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package std_logic_1164
 -- Compiling entity Decoder2x4
 -- Compiling architecture Decoder2x4_behav of Decoder2x4
-
-} {} {}} C:/ProgettoInfoInd/LightControlSystem/src/ControlLogic.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/ControlLogic.vhdl
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading package NUMERIC_STD
--- Compiling entity ControlLogic
--- Compiling architecture ControlLogic_behav of ControlLogic
 
 } {} {}} C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager.vhdl
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -126,16 +115,6 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity ConditionManager
 -- Compiling architecture ConditionManager_behav of ConditionManager
 
-} {} {}} C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager_enable_reset.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager_enable_reset.vhdl
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity test_ModalityManager_enable_reset
--- Compiling architecture test_ModalityManager_enable_reset_behav of test_ModalityManager_enable_reset
-
 } {} {}} C:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/tb_FaultDetector.vhdl
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -145,6 +124,16 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity test_FaultDetector
 -- Compiling architecture test_FaultDetector_behav of test_FaultDetector
+
+} {} {}} C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager_enable_reset.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/tb_ModalityManager_enable_reset.vhdl
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity test_ModalityManager_enable_reset
+-- Compiling architecture test_ModalityManager_enable_reset_behav of test_ModalityManager_enable_reset
 
 } {} {}} C:/ProgettoInfoInd/LightControlSystem/src/ModalityManager.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/ModalityManager.vhdl
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015

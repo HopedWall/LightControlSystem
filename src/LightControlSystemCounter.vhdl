@@ -31,6 +31,7 @@ component ControlLogic is
   mod5, mod12, mod15 : in std_logic; -- modalities from ModManager
   m,n,s : in std_logic; -- conditions from CondManager
   data_out_counter : in std_logic_vector(Nb-1 downto 0); -- time from Counter
+  reset_counter : out std_logic; -- for enable/setting the counter
   red, yellow, green : out std_logic); -- ouput, each represents 1 color
 end component;
 
@@ -38,13 +39,13 @@ constant numb : integer := 5;
 
 -- Internal signals declaration.
 signal data_out_counter_int: std_logic_vector(numb-1 downto 0);
-signal enable_logic_to_count, reset_logic_to_count : std_logic;
+signal reset_logic_to_count : std_logic;
 
 -- begin architecture
 begin
    -- only connect components
    control_logic_instance : ControlLogic generic map(Nb => numb)
-       port map(clk, enable, mod5, mod12, mod15, m, n, s, data_out_counter_int, red, yellow, green);
+       port map(clk, enable, mod5, mod12, mod15, m, n, s, data_out_counter_int, reset_logic_to_count, red, yellow, green);
    
    counter_reset_instance : counter_reset generic map(Nb => numb)
        port map(enable, clk, reset_logic_to_count, data_out_counter_int);

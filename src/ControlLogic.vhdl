@@ -30,6 +30,9 @@ begin
   
 if rising_edge(clk) then
 
+   -- set reset to 0
+   reset_variable := '0';
+   -- set lights to 0
    red_var := '0';
    yellow_var := '0';
    green_var := '0';
@@ -39,6 +42,7 @@ if rising_edge(clk) then
 
     --report "Curr time" & std_logic'image(data_out_counter(0));
     curr_time := to_integer(UNSIGNED(data_out_counter));
+    report "Curr time" & integer'image(curr_time);
 
     -- reset counter
     if previous_state = 'n' and n = '0' then
@@ -81,6 +85,7 @@ if rising_edge(clk) then
        end if;
        
        if curr_time = 2*mod_time-1 then
+          --report "INSIDE IF";
           reset_variable := '1';
        end if;
     end if;
@@ -88,7 +93,7 @@ if rising_edge(clk) then
     -- standby
     if s = '1' and n='0' and m='0' then
       previous_state := 's';
-      report "Curr time" & integer'image(curr_time);
+      --report "Curr time" & integer'image(curr_time);
       if (curr_time mod 3) = 0 then
          yellow_var := '1';        --1 sec yellow is on
       else
@@ -106,7 +111,7 @@ if rising_edge(clk) then
 end if;
 
 -- update signals from variables before process ends
-report "Yellow" & std_logic'image(yellow_var);
+--report "Yellow" & std_logic'image(yellow_var);
 red <= red_var;
 yellow <= yellow_var;
 green <= green_var;
