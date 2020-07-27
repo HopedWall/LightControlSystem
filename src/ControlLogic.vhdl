@@ -40,15 +40,15 @@ begin
    yellow_var := '0';
    green_var := '0';
 
+   -- should we keep enable?
+   if enable = '1' then
+   
    -- First time counter need to reset. 
    -- If not resetted it starts from 1 after first rising edge.
    if need_to_reset = 'y' then
    	reset_variable := '1';
    	need_to_reset := 'n';
    else
-
-   -- should we keep enable?
-   if enable = '1' then
 
     --report "Curr time" & std_logic'image(data_out_counter(0));
     curr_time := to_integer(UNSIGNED(data_out_counter));
@@ -111,7 +111,8 @@ begin
          yellow_var := '0';        --2 secs yellow is off
       end if;
     end if;
-
+  
+   end if; -- need_to_reset
 
    else -- enable = '0'
        red_var := '0';
@@ -119,8 +120,6 @@ begin
        green_var := '0';
 
    end if;
-
-   end if; -- need_to_reset
 
 -- update signals from variables before process ends
 --report "Yellow" & std_logic'image(yellow_var);
