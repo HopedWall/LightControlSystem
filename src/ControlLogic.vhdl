@@ -20,16 +20,17 @@ end ControlLogic;
 architecture ControlLogic_behav of ControlLogic is
 begin
 
-control_lights: process(clk)
+control_lights: process(data_out_counter)
 variable previous_state : character; -- variable for storing previous state
 variable reset_variable : std_logic; -- variable for resetting the counter
 variable enable_variable : std_logic;
 variable mod_time : integer := 5; -- variable for storing modality time
 variable curr_time : integer := 0; -- variable for storing current time from counter
 variable red_var, yellow_var, green_var : std_logic := '0'; -- variables for output
+variable need_to_reset : character := 'y'; -- used for reset first time.
 begin
   
-if rising_edge(clk) then
+--if rising_edge(data_out_counter) then
 
    -- set reset to 0
    reset_variable := '0';
@@ -38,6 +39,13 @@ if rising_edge(clk) then
    red_var := '0';
    yellow_var := '0';
    green_var := '0';
+
+   -- First time counter need to reset. 
+   -- If not resetted it starts from 1 after first rising edge.
+   if need_to_reset = 'y' then
+   	reset_variable := '1';
+   	need_to_reset := 'n';
+   else
 
    -- should we keep enable?
    if enable = '1' then
@@ -79,6 +87,7 @@ if rising_edge(clk) then
        previous_state := 'n';
        if curr_time >= 0 and curr_time < mod_time then     --red for 5 secs
           red_var := '1';
+	  report "RED time " & integer'image(curr_time);
        elsif curr_time >= mod_time and curr_time < (2*mod_time - 2) then  --only green for 3 secs
           green_var := '1';
        elsif curr_time >= (2*mod_time-2) and curr_time < 2*mod_time then --green and yellow for 2 secs
@@ -86,7 +95,7 @@ if rising_edge(clk) then
           yellow_var := '1';
        end if;
        
-       if curr_time = 2*mod_time-1 then
+       if curr_time > 2*mod_time-1 then
           --report "INSIDE IF";
           reset_variable := '1';
        end if;
@@ -110,11 +119,13 @@ if rising_edge(clk) then
        green_var := '0';
 
    end if;
-end if;
+
+   end if; -- need_to_reset
 
 -- update signals from variables before process ends
 --report "Yellow" & std_logic'image(yellow_var);
 report "Reset variable" & std_logic'image(reset_variable);
+
 red <= red_var;
 yellow <= yellow_var;
 green <= green_var;

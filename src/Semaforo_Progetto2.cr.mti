@@ -18,16 +18,6 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity test_ModalityManager
 -- Compiling architecture test_ModalityManager_behav of test_ModalityManager
 
-} {} {}} C:/ProgettoInfoInd/LightControlSystem/src/tb_CounterReset.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/tb_CounterReset.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity test_CounterReset
--- Compiling architecture test_CounterReset_behav of test_CounterReset
-
 } {} {}} C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager_enable.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager_enable.vhdl
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -48,15 +38,13 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity LightControlSystemCounter
 -- Compiling architecture LightControlSystem_behav of LightControlSystemCounter
 
-} {} {}} C:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlStstem.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/tb_LightControlStstem.vhdl
+} {} {}} C:/ProgettoInfoInd/LightControlSystem/src/Decoder.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/Decoder.vhdl
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity test_LightControlSystem
--- Compiling architecture test_LightControlSystem_behav of test_LightControlSystem
+-- Compiling entity Decoder2x4
+-- Compiling architecture Decoder2x4_behav of Decoder2x4
 
 } {} {}} C:/ProgettoInfoInd/LightControlSystem/src/FaultDetector.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/FaultDetector.vhdl
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -66,14 +54,6 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity FaultDetector
 -- Compiling architecture FaultDetector_behav of FaultDetector
 -- Loading entity Decoder2x4
-
-} {} {}} C:/ProgettoInfoInd/LightControlSystem/src/Decoder.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/Decoder.vhdl
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity Decoder2x4
--- Compiling architecture Decoder2x4_behav of Decoder2x4
 
 } {} {}} C:/ProgettoInfoInd/LightControlSystem/src/ControlLogic.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/ControlLogic.vhdl
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -155,6 +135,16 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity ModalityManager
 -- Compiling architecture ModalityManager_behav of ModalityManager
+
+} {} {}} C:/ProgettoInfoInd/LightControlSystem/src/tb_CounterReset.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/tb_CounterReset.vhdl
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity test_CounterReset
+-- Compiling architecture test_CounterReset_behav of test_CounterReset
 
 } {} {}} C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl {0 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
