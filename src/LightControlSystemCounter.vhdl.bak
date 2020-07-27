@@ -39,7 +39,7 @@ constant numb : integer := 5;
 
 -- Internal signals declaration.
 signal data_out_counter_int: std_logic_vector(numb-1 downto 0);
-signal enable_logic_to_count, reset_logic_to_count : std_logic;
+signal reset_logic_to_count : std_logic;
 
 -- begin architecture
 begin
