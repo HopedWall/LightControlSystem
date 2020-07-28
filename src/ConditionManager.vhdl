@@ -7,7 +7,6 @@ entity ConditionManager is
 port(
   clk, enable: in std_logic;
   cond: in std_logic_vector(1 downto 0);
-  counter_reset: out std_logic; -- reset and enable for counter
   m, n, s, e: out std_logic); -- ouput.
 end ConditionManager;
 
@@ -18,7 +17,7 @@ begin
 
 fsm_cond: process(cond, currentstate)
 variable mnse: std_logic_vector(3 downto 0); -- variable for remember output values.
-variable reset_var : std_logic := '1'; -- variable for resetting the counter
+--variable reset_var : std_logic := '1'; -- variable for resetting the counter
 begin
 
 case currentstate is 
@@ -31,12 +30,12 @@ case currentstate is
 		case cond is 
 			when "01" => nextstate <= S_NOMINAL; 
 			when "11" => nextstate <= S_STANDBY; 
-			when "00" => nextstate <= S_MAINTENANCE; reset_var := '0';	
+			when "00" => nextstate <= S_MAINTENANCE;	
 			when others => nextstate <= S_ERROR; 
 		end case;  --- cond=00
 	when S_NOMINAL => mnse := "0100";
 		case cond is 
-			when "01" => nextstate <= S_NOMINAL; reset_var := '0';
+			when "01" => nextstate <= S_NOMINAL;
 			when "11" => nextstate <= S_STANDBY; 
 			when "00" => nextstate <= S_MAINTENANCE; 	
 			when others => nextstate <= S_ERROR; 
@@ -44,7 +43,7 @@ case currentstate is
 	when S_STANDBY => mnse := "0010";
 		case cond is 
 			when "01" => nextstate <= S_NOMINAL; 
-			when "11" => nextstate <= S_STANDBY; reset_var := '0';
+			when "11" => nextstate <= S_STANDBY; 
 			when "00" => nextstate <= S_MAINTENANCE; 	
 			when others => nextstate <= S_ERROR; 
 		end case;  --- cond=11
@@ -64,7 +63,7 @@ n <= mnse(2);
 m <= mnse(3);
 
 -- Reset for counter, has to be resetted each time cond
-counter_reset <= reset_var; -- reset only when cond changes
+--counter_reset <= reset_var; -- reset only when cond changes
 
 end process;
 

@@ -19,7 +19,6 @@ component ConditionManager is
 port(
   clk, enable	: in std_logic;
   cond		: in std_logic_vector(1 downto 0);
-  counter_reset	: out std_logic; -- reset and enable for counter
   m, n, s, e	: out std_logic); -- ouput.
 end component;
 
@@ -62,12 +61,8 @@ signal enable_LCS_int 	    : std_logic; -- Enable signal for LCS (Enable if not 
 begin
 
    -- Signal update.
-   A <= fault_int(3);
-   B <= fault_int(2);
-   C <= fault_int(1);
-   D <= fault_int(0);
 
-   fault_for_enable_int <= (not A) and (not B) and (not C) and (D); -- OK config: 0001 --> enable = 1.
+   fault_for_enable_int <= (not fault_int(3)) and (not fault_int(2)) and (not fault_int(1)) and (fault_int(0)); -- OK config: 0001 --> enable = 1.
    enable_LCS_int 	<= enable and fault_for_enable_int; -- Enable signal for LCS (Enable if not Fault and global enable).
   
    -- Condition Manager.
