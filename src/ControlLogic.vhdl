@@ -1,6 +1,5 @@
 library ieee;
 use ieee.std_logic_1164.all;
---use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 
 -- contains to_integer
@@ -30,7 +29,7 @@ variable red_var, yellow_var, green_var : std_logic := '0'; -- variables for out
 variable need_to_reset : character := 'y'; -- used for reset first time.
 begin
   
---if rising_edge(data_out_counter) then
+--if rising_edge(clk) then
 
    -- set reset to 0
    reset_variable := '0';
@@ -62,6 +61,9 @@ begin
        reset_variable := '1';
     end if;
     if previous_state = 's' and s = '0' then
+       reset_variable := '1';
+    end if;
+    if previous_state = 'o' then -- if system was in off or error state reset counter next time that starts.
        reset_variable := '1';
     end if;
     
@@ -111,14 +113,24 @@ begin
          yellow_var := '0';        --2 secs yellow is off
       end if;
     end if;
+
+    -- off or error
+    --if s = '0' and n='0' and m='0' then
+    --  previous_state := 'o';     
+    --  red_var := '0';
+    --  yellow_var := '0';
+    --  green_var := '0';
+    --  enable_variable := 0;
+    --end if;
   
    end if; -- need_to_reset
 
-   else -- enable = '0'
+   else -- enable = '0' / error or off state
+       previous_state := 'o';
        red_var := '0';
        yellow_var := '0';
        green_var := '0';
-
+       --enable_variable := '0';
    end if;
 
 -- update signals from variables before process ends

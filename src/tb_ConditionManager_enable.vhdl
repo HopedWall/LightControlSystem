@@ -10,7 +10,6 @@ architecture test_ConditionManager_enable_behav of test_ConditionManager_enable 
 
 -- Declaration of components needed for TB. 
 component ConditionManager is 
-
 port(
   clk, enable: in std_logic;
   cond: in std_logic_vector(1 downto 0);
