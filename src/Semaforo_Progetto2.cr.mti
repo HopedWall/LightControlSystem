@@ -18,6 +18,16 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity test_ModalityManager
 -- Compiling architecture test_ModalityManager_behav of test_ModalityManager
 
+} {} {}} C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager_enable.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/tb_ConditionManager_enable.vhdl
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity test_ConditionManager_enable
+-- Compiling architecture test_ConditionManager_enable_behav of test_ConditionManager_enable
+
 } {} {}} C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/LightControlSystemCounter.vhdl
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -156,7 +166,7 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity test_LightControlSystem_enable
 -- Compiling architecture test_LightControlSystem_enable_behav of test_LightControlSystem_enable
 
-} {} {}} C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl {0 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl
+} {} {}} C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl {1 {vcom -work work -2002 -explicit -stats=none C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -165,25 +175,5 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity Semaforo_TopView
 -- Compiling architecture Semaforo_TopView_behav of Semaforo_TopView
-** Error: C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl(56): (vcom-1136) Unknown identifier "A".
 
-** Error: C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl(56): (vcom-1136) Unknown identifier "B".
-
-** Error: C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl(56): Bad expression in left operand of infix expression "and".
-** Error: C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl(56): Bad expression in right operand of infix expression "and".
-** Error: C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl(56): (vcom-1136) Unknown identifier "C".
-
-** Error: C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl(56): Bad expression in left operand of infix expression "and".
-** Error: C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl(56): Bad expression in right operand of infix expression "and".
-** Error: C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl(56): Bad expression in left operand of infix expression "and".
-** Error: C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl(56): (vcom-1136) Unknown identifier "D".
-
-** Error: C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl(56): Type error resolving infix expression "and" as type ieee.std_logic_1164.STD_LOGIC.
-** Error: C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl(57): (vcom-1136) Unknown identifier "fault_for_enable".
-
-** Error: C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl(57): Type error resolving infix expression "and" as type ieee.std_logic_1164.STD_LOGIC.
-** Error: C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl(68): (vcom-1136) Unknown identifier "clk_int".
-
-** Error: C:/ProgettoInfoInd/LightControlSystem/src/Semaforo_TopView.vhdl(76): VHDL Compiler exiting
-
-} {10.0 11.0 12.0 13.0 14.0 17.0 18.0 22.0 23.0 25.0 26.0 28.0 29.0 30.0} {}}
+} {} {}}
