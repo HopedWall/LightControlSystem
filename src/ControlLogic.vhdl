@@ -12,7 +12,7 @@ port(
   mod5, mod12, mod15 : in std_logic; -- modalities from ModManager
   m,n,s : in std_logic; -- conditions from CondManager
   data_out_counter : in std_logic_vector(Nb-1 downto 0);
-  reset_counter, enable_counter : out std_logic; -- for enable/setting the counter
+  reset_counter : out std_logic; -- for enable/setting the counter
   red, yellow, green : out std_logic); -- ouput, each represents 1 color
 end ControlLogic;
 
@@ -22,7 +22,7 @@ begin
 control_lights: process(data_out_counter)
 variable previous_state : character; -- variable for storing previous state
 variable reset_variable : std_logic; -- variable for resetting the counter
-variable enable_variable : std_logic;
+--variable enable_variable : std_logic;
 variable mod_time : integer := 5; -- variable for storing modality time
 variable curr_time : integer := 0; -- variable for storing current time from counter
 variable red_var, yellow_var, green_var : std_logic := '0'; -- variables for output
@@ -33,7 +33,7 @@ begin
 
    -- set reset to 0
    reset_variable := '0';
-   enable_variable := '1';
+   --enable_variable := '1';
    -- set lights to 0
    red_var := '0';
    yellow_var := '0';
@@ -144,7 +144,7 @@ green <= green_var;
 
 -- update reset counter
 reset_counter <= reset_variable;
-enable_counter <= enable_variable;
+--enable_counter <= enable_variable;
 
 end process;
 
