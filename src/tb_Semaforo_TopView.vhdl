@@ -39,6 +39,8 @@ begin
 cond_int <= "01"; mod_int <= "11"; wait for 50 ns; -- Not change -> exit only with 00 on maintenance.
 -- Maintenance.
 cond_int <= "00"; mod_int <= "00"; wait for 50 ns; -- All lights up.
+-- ERROR
+cond_int <= "10"; mod_int <= "11"; wait for 200 ns; -- Not change -> exit only with 00 on maintenance.
 -- Stand By.
 cond_int <= "11"; mod_int <= "01"; wait for 50 ns; -- Yellow 1 up 2 down. Modality doesn't change.
 -- Nominal Mod 5.

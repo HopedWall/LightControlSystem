@@ -48,6 +48,6 @@ begin
        port map(clk, enable, mod5, mod12, mod15, m, n, s, data_out_counter_int, reset_logic_to_count, enable_logic_to_count, red, yellow, green);
    
    counter_reset_instance : counter_reset generic map(Nb => numb)
-       port map(enable_logic_to_count, clk, reset_logic_to_count, data_out_counter_int);
+       port map('1', clk, reset_logic_to_count, data_out_counter_int); -- Remember 1.
 
 end LightControlSystem_behav;

@@ -44,7 +44,7 @@ end process;
 
 enable_LCS_gen: process
 begin
-enable_LCS_int <= '1'; wait for 305 ns;
+enable_LCS_int <= '1'; wait for 455 ns;
 enable_LCS_int <= '0'; wait for 156 ns;
 end process;
 

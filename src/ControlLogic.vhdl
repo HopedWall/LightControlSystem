@@ -63,9 +63,9 @@ begin
     if previous_state = 's' and s = '0' then
        reset_variable := '1';
     end if;
-    if previous_state = 'o' then -- if system was in off or error state reset counter next time that starts.
-       reset_variable := '1';
-    end if;
+    --if previous_state = 'o' then -- if system was in off or error state reset counter next time that starts.
+    --   reset_variable := '1';
+    --end if;
     
     -- get modality time
     if mod5 = '1' then
@@ -131,6 +131,7 @@ begin
        yellow_var := '0';
        green_var := '0';
        --enable_variable := '0';
+       need_to_reset := 'y';
    end if;
 
 -- update signals from variables before process ends

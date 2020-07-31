@@ -51,7 +51,6 @@ end component;
 signal mod5_int, mod12_int, mod15_int, err_MM_int : std_logic;
 signal m_int, s_int, n_int, err_CM_int : std_logic;
 signal fault_int : std_logic_vector(3 downto 0);
-signal A, B, C, D : std_logic;
 
 -- Composed signal declaration.
 signal fault_for_enable_int : std_logic; -- OK config: 0001 --> enable = 1.

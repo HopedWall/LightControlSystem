@@ -23,8 +23,7 @@ architecture counter_reset_behavior of counter_reset is
         variable count: std_logic_vector(Nb-1 downto 0):=(others => '0');
       begin
          
-       if reset = '1' then
-         count := (others => '0');
+       if reset = '0' then
          if clk'event and clk='1' then
 
 	    -- same as old counter          
@@ -37,7 +36,7 @@ architecture counter_reset_behavior of counter_reset is
             else count := count;
             end if; -- T='1'
          end if; --'clk'event
-      else
+      else --reset='1'
          count := (others => '0');
        end if;
 
@@ -47,3 +46,4 @@ architecture counter_reset_behavior of counter_reset is
      
 	   
 end counter_reset_behavior;
+
