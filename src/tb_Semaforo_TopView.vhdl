@@ -38,14 +38,21 @@ begin
 -- OFF
 cond_int <= "01"; mod_int <= "11"; wait for 50 ns; -- Not change -> exit only with 00 on maintenance.
 -- Maintenance.
-cond_int <= "00"; mod_int <= "00"; wait for 50 ns; -- All lights up.
+cond_int <= "00"; mod_int <= "00"; wait for 200 ns; -- All lights up.
 -- ERROR
-cond_int <= "10"; mod_int <= "11"; wait for 200 ns; -- Not change -> exit only with 00 on maintenance.
+--cond_int <= "10"; mod_int <= "11"; wait for 200 ns; -- Not change -> exit only with 00 on maintenance.
 -- Stand By.
-cond_int <= "11"; mod_int <= "01"; wait for 50 ns; -- Yellow 1 up 2 down. Modality doesn't change.
+cond_int <= "11"; mod_int <= "00"; wait for 200 ns; -- Yellow 1 up 2 down. Modality doesn't change.
 -- Nominal Mod 5.
-cond_int <= "01"; mod_int <= "01"; wait for 200 ns; -- Mod 5. and modality doesn't change.
-
+cond_int <= "01"; mod_int <= "01"; wait for 1000 ns; -- Mod 5. and modality doesn't change.
+-- Maintenance set Mod 12
+cond_int <= "00"; mod_int <= "01"; wait for 200 ns; -- All lights up.
+-- Nominal Mod 12
+cond_int <= "01"; mod_int <= "01"; wait for 1000 ns; -- Mod 5. and modality doesn't change.
+-- Maintenance set Mod 15
+cond_int <= "00"; mod_int <= "11"; wait for 200 ns; -- All lights up.
+-- Nominal Mod 12
+cond_int <= "01"; mod_int <= "11"; wait for 1500 ns; -- Mod 5. and modality doesn't change.
 end process;
 
 -- Instancing components with map of corresponding signals.

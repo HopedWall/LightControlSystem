@@ -112,6 +112,11 @@ begin
       else
          yellow_var := '0';        --2 secs yellow is off
       end if;
+
+      --if curr_time = 3 then
+      --   reset_variable := '1';
+      --end if;
+
     end if;
 
     -- off or error
