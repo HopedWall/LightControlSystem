@@ -21,6 +21,7 @@ begin
 
 control_lights: process(data_out_counter)
 variable previous_state : character; -- variable for storing previous state
+variable previous_mode : integer;
 variable reset_variable : std_logic; -- variable for resetting the counter
 --variable enable_variable : std_logic;
 variable mod_time : integer := 5; -- variable for storing modality time
@@ -67,13 +68,19 @@ begin
     --   reset_variable := '1';
     --end if;
     
-    -- get modality time
+    if mod5 = '1' and previous_mode /= 5 and n = '1' then
+       reset_variable := '1';
+    end if;
+
     if mod5 = '1' then
        mod_time := 5;
+       previous_mode := 5;
     elsif mod12 = '1' then
        mod_time := 12;
+       previous_mode := 12;
     elsif mod15 = '1' then
        mod_time := 15;
+       previous_mode := 15;
     end if;
 
     -- maintenance
