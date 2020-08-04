@@ -3,10 +3,10 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 	 	 
-entity test_Semaforo_TopView_enable_reset is
-    end test_Semaforo_TopView_enable_reset;
+entity test_Semaforo_TopView_enable is
+    end test_Semaforo_TopView_enable;
     
-architecture test_Semaforo_TopView_enable_reset_behav of test_Semaforo_TopView_enable_reset is
+architecture test_Semaforo_TopView_enable_behav of test_Semaforo_TopView_enable is
 
 -- Counter for testing purposes
 component Semaforo_TopView is 
@@ -23,7 +23,7 @@ signal green_int, yellow_int, red_int: std_logic;
 signal fault_int : std_logic_vector(3 downto 0);
 signal clk_int: std_logic;
 signal cond_int, mod_int : std_logic_vector(1 downto 0);
-signal enable_int, reset_int : std_logic;
+signal enable_int : std_logic;
 
 begin
 
@@ -36,40 +36,34 @@ end process;
 
 enable_gen: process
 begin
-enable_int <= '1'; wait for 254 ns;
-enable_int <= '0'; wait for 64 ns;
-end process;
-
-reset_gen: process
-begin
-reset_int <= '1'; wait for 263 ns;
-reset_int <= '0'; wait for 33 ns;
+enable_int <= '1'; wait for 123 ns;
+enable_int <= '0'; wait for 105 ns;
 end process;
 
 input_gen: process
 begin
 -- OFF
 cond_int <= "01"; mod_int <= "11"; wait for 50 ns; -- Not change -> exit only with 00 on maintenance.
--- Maintenance.
+-- Maintenance
 cond_int <= "00"; mod_int <= "00"; wait for 200 ns; -- All lights up.
--- Stand By.
+-- Stand By
 cond_int <= "11"; mod_int <= "00"; wait for 200 ns; -- Yellow 1 up 2 down. Modality doesn't change.
--- Nominal Mod 5.
-cond_int <= "01"; mod_int <= "01"; wait for 500 ns; -- Mod 5. and modality doesn't change.
+-- Nominal Mod 5
+cond_int <= "01"; mod_int <= "01"; wait for 200 ns; -- Mod 5. and modality doesn't change.
 -- Maintenance set Mod 12
 cond_int <= "00"; mod_int <= "01"; wait for 200 ns; -- All lights up.
 -- Nominal Mod 12
-cond_int <= "01"; mod_int <= "01"; wait for 800 ns; -- Mod 5. and modality doesn't change.
+cond_int <= "01"; mod_int <= "01"; wait for 200 ns; -- Mod 5. and modality doesn't change.
 -- Maintenance set Mod 15
 cond_int <= "00"; mod_int <= "11"; wait for 200 ns; -- All lights up.
 -- Nominal Mod 15
-cond_int <= "01"; mod_int <= "11"; wait for 800 ns; -- Mod 5. and modality doesn't change.
+cond_int <= "01"; mod_int <= "11"; wait for 200 ns; -- Mod 5. and modality doesn't change.
 end process;
 
 -- Instancing components with map of corresponding signals.
-STV: Semaforo_TopView port map(clk_int, enable_int, reset_int, cond_int, mod_int,
+STV: Semaforo_TopView port map(clk_int, enable_int, '1', cond_int, mod_int,
 	red_int, yellow_int, green_int, fault_int);
 
 --counter_tb : counter generic map (Nb => numb)
 --	  port map('1', clk_int, data_out_counter);
-end test_Semaforo_TopView_enable_reset_behav;
+end test_Semaforo_TopView_enable_behav;
