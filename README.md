@@ -10,6 +10,7 @@ This traffic light works in three operative conditions:
     - Possible MOD are: **MOD5** (default, green on for 5 seconds), **MOD12** (green on for 12 seconds) and **MOD15** (green on for 15 seconds).
 
 Finally, there are also other two signals:
+
     - **ENABLE**: if high the traffic light is active and operate in previous operative conditions. If low the traffic light is off and does not respod to external input.
     - **RESET:**: active low; if 1->0 transition occurs the traffic light return to **MOD5**.
 
