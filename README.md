@@ -12,6 +12,6 @@ This traffic light works in three operative conditions:
 Finally, there are also other two signals:
 
 - **ENABLE**: if high the traffic light is active and operate in previous operative conditions. If low the traffic light is off and does not respod to external input.
-- **RESET:**: active low; if 1->0 transition occurs the traffic light return to **MOD5**.
+- **RESET**: active low; if 1->0 transition occurs the traffic light return to **MOD5**.
 
 
